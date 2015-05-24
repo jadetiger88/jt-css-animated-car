@@ -1,0 +1,81 @@
+body {
+	background: #000 url("../img/bg.jpg") repeat-x 0 0; 
+	height:100%; 
+
+	animation: go_background 5s linear infinite;
+	-moz-animation: go_background 5s linear infinite;
+	-webkit-animation: go_background 5s linear infinite;
+
+}
+
+#container {
+	margin: 270px auto;
+	width: 1000px;
+	overflow: hidden;
+}
+
+#car_body {
+	background: url("../img/body.png") no-repeat;
+	width: 490px;
+	height: 170px;
+	margin: auto;
+}
+
+#car_front_wheel {
+	background: url("../img/wheel.png") no-repeat;
+	margin-left: 279px;
+	margin-top: -75px;
+	width: 80px;
+	height: 80px;
+	float: left;
+
+	animation: go_wheel 5s linear 0s infinite;
+	-moz-animation: go_wheel 5s linear 0s infinite;
+	-webkit-animation: go_wheel 5s linear 0s infinite;
+}
+
+#car_back_wheel {
+	background: url("../img/wheel.png") no-repeat;
+	margin-right: 303px;
+	margin-top: -75px;
+	width: 80px;
+	height: 80px;
+	float: right;
+
+	animation: go_wheel 5s linear 0s infinite;
+	-moz-animation: go_wheel 5s linear 0s infinite;
+	-webkit-animation: go_wheel 5s linear 0s infinite;
+}
+
+@keyframes go_wheel {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes go_wheel {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes go_wheel {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(-360deg)}
+}
+
+@keyframes go_background {
+	0%   {background-position: 0px    0px;}
+	100% {background-position: 1000px 0px}
+}
+
+@-moz-keyframes go_background {
+	0% {background-position: 0px 0px;}
+	100% {background-position: 1000px 0px}
+}
+
+@-webkit-keyframes go_background {
+	0% {background-position: 0px 0px;}
+	100% {background-position: 1000px 0px}
+}
+
+
+
