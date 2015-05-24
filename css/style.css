@@ -77,5 +77,11 @@ body {
 	100% {background-position: 1000px 0px}
 }
 
+.pause {
+	animation-play-state: paused !important;
+	-moz-animation-play-state: paused !important;
+	-webkit-animation-play-state: paused !important;
+}
+
 
 
